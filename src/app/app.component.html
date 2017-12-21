@@ -1,0 +1,40 @@
+
+<div class="container">  
+
+    <style>
+        .powerlevel1{
+          
+          height: 200px;
+          background-color: whitesmoke;
+        }
+      </style>
+
+<label>Initial Power Level:</label>
+<input type="range" name="initialPower1" id="initialPower1" [(ngModel)]="initialPower"> : {{initialPower}}
+<!-- <button (click)="calculate()">Calculate</button> -->
+
+<!-- <app-human [humanInitialPower]='initialPower'></app-human>
+<app-saiyan [humanInitialPower]='initialPower'></app-saiyan>
+<app-super-saiyan [humanInitialPower]='initialPower'></app-super-saiyan>
+<app-super-saiyan-two [humanInitialPower]='initialPower'></app-super-saiyan-two>
+
+<app-super-saiyan-three [humanInitialPower]='initialPower'></app-super-saiyan-three>
+<app-super-saiyan-tfour [humanInitialPower]='initialPower'></app-super-saiyan-tfour> -->
+
+<br>
+<br><br><br>
+<div class="row">
+
+    <div class="col-3 powerlevel1 mb-2 ml-3"><app-human [humanInitialPower]='initialPower'></app-human></div>
+    <div class="col-3 powerlevel1 mb-2 ml-3"><app-saiyan [humanInitialPower]='initialPower'></app-saiyan></div>
+    <div class="col-3 powerlevel1 mb-2 ml-3"><app-super-saiyan [humanInitialPower]='initialPower'></app-super-saiyan></div>
+  </div>
+  <br>
+  
+  <div class="row">
+      <div class="col-3 powerlevel1 mb-2 ml-3"><app-super-saiyan-two [humanInitialPower]='initialPower'></app-super-saiyan-two></div>
+      <div class="col-3 powerlevel1 mb-2 ml-3"><app-super-saiyan-three [humanInitialPower]='initialPower'></app-super-saiyan-three></div>
+      <div class="col-3 powerlevel1 mb-2 ml-3"><app-super-saiyan-tfour [humanInitialPower]='initialPower'></app-super-saiyan-tfour></div>
+  </div>
+
+</div>
